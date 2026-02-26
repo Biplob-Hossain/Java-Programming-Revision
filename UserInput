@@ -1,0 +1,19 @@
+//This Program for User Input Practise
+import java.util.Scanner;
+
+public class UserInput {
+
+    public static void main(String[] args) {
+
+        Scanner input =new Scanner(System.in) ;
+
+        int num;
+
+        System.out.println(" Please Enter your num ");
+        num= input.nextInt();
+        System.out.printf(" Your entered number is %d",num);
+    }
+
+
+
+}
