@@ -1,0 +1,25 @@
+public class Math {
+
+    public static void main(String[] args) {
+
+        int num1=20, num2=30, sum, mul, subs;
+        float mod, div;
+
+        sum=num1+num2;
+
+        subs=num2-num1;
+
+        mul=num1*num2;
+
+        mod=num2%num1;
+
+        div= (float) num2/num1;
+
+        System.out.printf("sum is %d\n",sum);
+        System.out.printf("sbstract %d\n",subs);
+        System.out.printf("Multiply is %d\n",mul);
+        System.out.printf("Modulus is %.2f\n",mod);
+        System.out.printf("Dividation is %.2f\n",div);
+
+    }
+}
