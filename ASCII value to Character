@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class ASCIIVtoCharacter {
+
+    public static void main(String[] args) {
+
+        Scanner sc =new Scanner(System.in);
+
+        System.out.println("Please enter any ASCII value");
+        int Value= sc.nextInt();
+
+        System.out.println("Your ASCII value is " +Value);
+        System.out.println("Character for your ASCII value is " +(char)Value);//Type casting inside output
+    }
+
+
+}
