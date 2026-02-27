@@ -1,0 +1,12 @@
+public class SizeOf {
+
+    public static void main(String[] args) {
+
+
+
+        System.out.printf(" Size of Intiger is %d",Integer.SIZE);
+        System.out.printf(" Size of Double is %d",Double.SIZE);
+        System.out.printf(" Size of Float is %d",Float.SIZE);
+        System.out.printf(" Size of Character is %d",Character.SIZE);
+    }
+}
