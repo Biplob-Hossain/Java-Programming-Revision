@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class UserInputAdvanced {
+
+    public static void main(String[] args) {
+
+        Scanner sc =new Scanner(System.in);
+
+        System.out.println("Please enter any Intiger number ");
+        int num = sc.nextInt();
+        System.out.println("Please enter any float number ");
+        float num1 =sc.nextFloat();
+        System.out.println("Please enter any double number");
+        double num2 =sc.nextDouble();
+
+        sc.nextLine(); // for delete buffer cleare
+        System.out.println("Please enter your string name ");
+        String name =sc.nextLine();
+
+        System.out.println("Enter any Character");
+        char ch =sc.next().charAt(0);
+
+        System.out.println(" your Intiger number is "+num);
+        System.out.println(" your float number is "+num1);
+        System.out.println(" your double number is "+num2);
+        System.out.println(" your String name  is "+name);
+        System.out.println(" your Entered Character  is "+ch);
+    }
+
+}
