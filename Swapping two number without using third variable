@@ -1,0 +1,46 @@
+public class Swapping1 {
+
+    public static void main(String[] args) {
+
+       /* one way to swap two value without using third variable
+        int num1=10,num2=20;
+
+        System.out.printf(" befor swapping value of two number is %n%d%n%d\n" ,num1,num2);
+        num1 =num1 + num2;
+        num2 =num1-num2;
+        num1=num1-num2;
+
+        System.out.printf(" after swapping value of two number is %n%d%n%d" ,num1,num2);
+
+    }
+}
+
+        */
+
+        /* This is the another way for swapping two number using wothout third variable
+
+        int num1=10,num2=20;
+
+        System.out.printf(" befor swapping value of two number is %n%d%n%d\n" ,num1,num2);
+        num1 =num1 * num2;
+        num2 =num1/num2;
+        num1=num1/num2;
+
+        System.out.printf(" after swapping value of two number is %n%d%n%d" ,num1,num2);
+
+    }
+}
+
+         */
+
+        int num1=10,num2=20;
+
+        System.out.printf(" befor swapping value of two number is %n%d%n%d\n" ,num1,num2);
+        num1 =num1 + num2;
+        num2 =num1-num2;
+        num1=num1-num2;
+
+        System.out.printf(" after swapping value of two number is %n%d%n%d" ,num1,num2);
+
+    }
+}
