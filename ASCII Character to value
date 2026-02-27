@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ASCIICToValue {
+
+    public static void main(String[] args) {
+
+        Scanner Ch = new Scanner(System.in);
+
+        char input;
+        System.out.println("Please enter any ASCII character");
+
+        input=Ch.next().charAt(0);
+        System.out.println("The character is: " + input);
+        System.out.println("The ASCII value is: " + (int)input);
+    }
+}
