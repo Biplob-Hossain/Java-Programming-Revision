@@ -1,0 +1,18 @@
+
+
+import java.util.Scanner;
+public class CenciusToFarhenheit {
+
+    public static void main(String[] args) {
+
+        double Farhenheit;
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Please enter Celcious now");
+
+        double Celcious = sc.nextDouble();
+
+        Farhenheit=(Celcious*1.8)+32;
+        System.out.printf("Temperature is now %.2f\u00B0F",Farhenheit);
+    }
+}
