@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class FarhenheitToCelcius {
+
+    public static void main(String[] args) {
+
+        double Celcius;
+
+        Scanner sc =new Scanner(System.in);
+
+        System.out.println("Please Enter Farhenheit now ");
+
+        double Farhenheit= sc.nextDouble();
+
+        Celcius=(Farhenheit-32)/1.8;
+
+        System.out.printf("Temperature is now %.2f\u00B0C ",Celcius);
+    }
+
+}
