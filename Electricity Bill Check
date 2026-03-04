@@ -1,0 +1,28 @@
+
+
+import java.util.Scanner;
+
+    public class electricityBill {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("How many Unit you Consumed ");
+            double units = sc.nextDouble();
+            double bill = 0;
+
+            if (units <= 100) {
+                bill = units * 5;
+            }
+            else if (units <= 200) {
+                // 5 for first 100 and 7 for next 100
+                bill = (100 * 5) + ((units - 100) * 7);
+            }
+            else {
+                // 5 for first 100 unit 7 for next 100 unit and 10 for rest later unit
+                bill = (100 * 5) + (100 * 7) + ((units - 200) * 10);
+            }
+
+            System.out.println("Your Totall Bill : " + bill + " BDT");
+        }
+    }
+
