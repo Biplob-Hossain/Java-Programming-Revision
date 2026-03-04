@@ -1,0 +1,27 @@
+
+public class TrafficSignalSimulation {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        String RED = "\u001B[31m";
+        String GREEN = "\u001B[32m";
+        String YELLOW = "\u001B[33m";
+        String RESET = "\u001B[0m";
+
+        System.out.println("..........Traffic Signal Simulation is on..........");
+
+        while (true)
+        {
+            System.out.println(RED + " \nStop\n");
+            Thread.sleep(5000);
+
+            System.out.println( YELLOW + " Get Ready To Go\n");
+            Thread.sleep(5000);
+
+            System.out.println( GREEN + " Go Go Go Fast");
+
+        }
+
+    }
+
+}
