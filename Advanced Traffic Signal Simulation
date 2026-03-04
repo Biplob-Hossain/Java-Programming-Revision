@@ -1,0 +1,36 @@
+public class TrafficSignalSimulationAdvanced {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        // কালার কোড
+        String RED = "\u001B[31m";
+        String GREEN ="\u001B[32m";
+        String YELLOW ="\u001B[33m";
+        String RESET = "\u001B[0m"; // স্ট্যান্ডার্ড রিসেট কোড ০ ব্যবহার করাই ভালো
+
+        System.out.println("=== Traffic Signal Simulation for 4-Way Road ===");
+
+        int road;
+        while (true) {
+            // লুপের কাজ শুরু এখান থেকে
+            for (road = 1; road <= 4; road++) {
+
+                System.out.println("\n.....Traffic Signal Simulation Start.......");
+                System.out.println("Current road on signal: " + road);
+
+                // প্রস্তুতির সিগন্যাল
+                System.out.println(YELLOW + "● ROAD " + road + " Get Ready" + RESET);
+                Thread.sleep(2000);
+
+                // চলার সিগন্যাল
+                System.out.println(GREEN + "● ROAD " + road + " GO GO GO! Fast" + RESET);
+                Thread.sleep(5000);
+
+                // থামার সিগন্যাল
+                System.out.println(RED + "● ROAD " + road + " STOP" + RESET);
+                Thread.sleep(2000);
+            }
+            // লুপ শেষ, আবার ১ থেকে শুরু হবে
+        }
+    }
+}
