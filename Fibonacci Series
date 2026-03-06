@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class FibonacciSeries {
+    public static void main(String[] args) {
+
+        int n,i, fibo, n1=0, n2=1;
+        System.out.println("Enter any number you want finonacci\n");
+
+        Scanner sc =new Scanner(System.in);
+
+        n=sc.nextInt();
+        System.out.println("Fibonacci series is: ");
+        for (i=1; i<=n; i++)
+        {
+            System.out.println(n1+",");
+            
+            fibo=n1+n2;
+            n1=n2;
+            n2=fibo;
+        }
+
+    }
+}
