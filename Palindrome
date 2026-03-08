@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Palindrome {
+    public static void main(String[] args) {
+
+        int N, temp, rem,sum=0;
+
+        System.out.println("Enter any Digit for Paliondrome Check\n");
+        Scanner sc =new Scanner(System.in);
+
+        N=sc.nextInt();
+        temp=N;
+        while (temp!=0)
+        {
+            rem=temp%10;
+            sum=sum*10+rem;
+            temp=temp/10;
+        }
+        if (N==sum)
+        {
+            System.out.println("This is Palindrome ");
+        }
+        else
+            System.out.println("This is not Palindrome");
+    }
+
+}
