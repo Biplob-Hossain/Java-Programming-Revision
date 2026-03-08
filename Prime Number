@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class PimeNumber {
+
+    public static void main(String[] args) {
+
+        int N, i, flag=0;
+
+        System.out.println("Enter any Digit for Check Prime\n");
+        Scanner sc =new Scanner(System.in);
+
+        N=sc.nextInt();
+
+        if (N<=1) {
+            System.out.println("This is not Prime");
+        return ;
+        }
+
+        for ( i=2; i <=N/2; i++)
+        {
+            if (N%i==0)
+            {
+                flag =1;
+                break;
+            }
+        }
+        if (flag==0)
+        {
+            System.out.println("This is Prime number");
+        }
+        else
+        {
+            System.out.println("This is not Prime number");
+        }
+
+    return;
+    }
+
+}
