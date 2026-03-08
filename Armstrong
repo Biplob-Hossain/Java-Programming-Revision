@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String[] args) {
+
+        int N, temp, rem,sum=0;
+
+        System.out.println("Enter any Digit for Armstrong Check\n");
+        Scanner sc =new Scanner(System.in);
+
+        N=sc.nextInt();
+        temp=N;
+        while (temp!=0)
+        {
+            rem=temp%10;
+            sum=sum+(rem*rem*rem);
+            temp=temp/10;
+        }
+        if (N==sum)
+        {
+            System.out.println("This is Armstrong ");
+        }
+        else
+            System.out.println("This is not Armstrong");
+    }
+
+}
